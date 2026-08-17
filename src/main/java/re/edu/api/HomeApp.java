@@ -11,9 +11,14 @@ public class HomeApp {
 
     // điều hướng request của người dùng và trả về trang index.html
 
-    // tiếp nhân và x lí yêu cầu với url là /home
+    // tiếp nhân và xử lí yêu cầu với url là /home
     @GetMapping("/home")
     public String home(){ // String là đại diện cho đường dẫn trỏ tới giao diện cần hiển thị
         return "index";
+    }
+
+    @GetMapping("/sum")
+    public String sum(){
+        return "sum";
     }
 }
